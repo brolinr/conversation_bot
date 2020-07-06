@@ -9,10 +9,44 @@ class BotServlet < WEBrick::HTTPServlet::AbstractServlet
 # some placeholder text (%RESPONSE%) so the bot's responses can be
 # substituted in easily later.
 @@html = %q{
-<html><body>
-<form method="get">
+<html>
+<style>
+    body{
+        height: 100vh;
+        width: 100%;
+        background-color: #FFFFFF;
+    }
+    h1{
+        text-align: center;
+    }
+    form{
+     position: relative;
+     left: 500px;
+     height: 400px;
+     margin: 0;
+     background-color: #0097FF; 
+     width: 500px;
+     padding-top: 20px;  
+     padding-left: 10px;
+     padding-right: 10px;
+    }
+    p{
+        position: relative;
+        top: 20px;  
+    }
+    .respond{
+        width: 500px;
+        height: 300px;
+        background-color: #FFFFFF;
+    }
+ </style>
+<body>
 <h1>Talk To A Bot</h1>
+<form method="get">
+
+<div class="respond">
 %RESPONSE%
+</div>
 <p>
 <b>You say:</b><input type="text" name="line" size="40" />
 <input type="submit" />
