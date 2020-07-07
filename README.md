@@ -1,5 +1,5 @@
 # Conversation_bot
-A telegram bot working as a personal resume
+A chatter-bot working as a psychotherapist
 
 # By Brolin Remunyanga
 
